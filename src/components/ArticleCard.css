@@ -1,0 +1,51 @@
+/* Container Styles */
+.articleCardItem {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Thumbnail takes 1/3 of space, content 2/3 */
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background: #fafafa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .articleCardItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Thumbnail Styles */
+  .articleCardThumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  /* Content Styles */
+  .articleCardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .articleCardHeadline {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #000000;
+  }
+  
+  .articleCardText {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+  }
+
+  /* Quick hack to remove underline */
+  a {
+    text-decoration: none;
+  }
+  
